@@ -5,6 +5,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   header {
@@ -53,3 +56,39 @@ body {
     margin-bottom: 10px;
   }
   
+
+  .content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s, max-height 0.5s;
+}
+
+.expandable.active .content {
+    opacity: 1;
+}
+
+.arrow-container {
+  background-color: rgb(48, 183, 255);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  color: #fff;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #ffffff;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+
+.expandable.active .arrow {
+  transform: rotate(180deg);
+}

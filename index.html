@@ -4,6 +4,7 @@
   <title>James Cromack</title>
   <link rel="icon" href="favi.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="functionality.js"></script>
 </head>
 <body>
   <header>
@@ -19,12 +20,54 @@
   <section>
     <h2>Past Work</h2>
     <ul>
-      <li href="">Predictive Modeling for Stock Market Using Tree-Based Machine Learning Algorithms</li>
-      <li href="">Deep q-learning neural network implemented to learn chess</li>
-      <li href="">Wine classifier using Java</li>
-      <li>Full stack Bird app demo</li>
+      <li class="expandable">
+          <div class="header">
+              <a href="#">Predictive Modeling for Stock Market Using Tree-Based Machine Learning Algorithms</a>
+              <a>  </a>
+              <div class="arrow-container">
+                  <span class="arrow"></span>
+              </div>
+          </div>
+          <div class="content">Details about the project...</div>
+      </li>
+      <li class="expandable">
+          <div class="header">
+              <a href="#">Deep q-learning neural network implemented to learn chess</a>
+              <a>  </a>
+              <div class="arrow-container">
+                  <span class="arrow"></span>
+              </div>
+          </div>
+          <div class="content">Details about the project...</div>
+      </li>
+      <li class="expandable">
+          <div class="header">
+              <a href="#">Wine classifier using Java</a>
+              <a>  </a>
+              <div class="arrow-container">
+                  <span class="arrow"></span>
+              </div>
+          </div>
+          <div class="content">Details about the project...</div>
+      </li>
+      <li class="expandable">
+          <div class="header">
+              <a href="#" onclick="redirectToWebsite()">Fullstack Bird application</a>
+              <a>  </a>
+              <div class="arrow-container">
+                  <span class="arrow"></span>
+              </div>
+          </div>
+          <div class="content">Bird-spotting application made on Nodejs framework. Involves features such as 
+              sorting by location and date aswell as a working chatroom/ comment section. Should be noted that
+              since it is being hosted on free servers, may take a minute to start running - recommended to click twice;
+               once for starting server and once for loading login page.
+          </div>
+      </li>
     </ul>
-  </section>
+</section>
+
+
 
 </body>
 </html>
