@@ -12,12 +12,10 @@
     <p>Graduate Computer Science student at the University of Sheffield</p>
     <ul>
       <li>Strong interest in data science and use of data in finincial markets</li> <br>
-      <li>Twitter</li>
-      <li>Email</li>
     </ul>
   </header>
 
-  <section>
+  <section id="first">
     <h2>Past Work</h2>
     <ul>
       <li class="expandable">
@@ -32,13 +30,15 @@
       </li>
       <li class="expandable">
           <div class="header">
-              <a href="#">Deep q-learning neural network implemented to learn chess</a>
+              <a href="https://github.com/jcromack/DeepQSChess">Deep q-learning neural network implemented to learn chess</a>
               <a>  </a>
               <div class="arrow-container">
                   <span class="arrow"></span>
               </div>
           </div>
-          <div class="content">Details about the project...</div>
+          <div class="content">Implementation of deep learning neural networks using both Q-learning and 
+            SARSA, in order to learn chess on a 4x4 grid against a random agent. Both algorithms acheived over 92% average win rate
+            over a time frame of 100,000 iterations. Final grade was 91/100. </div>
       </li>
       <li class="expandable">
           <div class="header">
@@ -57,7 +57,7 @@
               <div class="arrow-container">
                   <span class="arrow"></span>
               </div>
-              <button style="background-color: red; color: white;" onclick="redirectToWebsite()">Launch</button>
+              <button id="redlaunch" style="background-color: red; color: white;" onclick="redirectToWebsite()">Launch</button>
 
           </div>
           <div class="content">Bird-spotting application made on Nodejs framework. Involves features such as 
@@ -69,6 +69,23 @@
     </ul>
 </section>
 
+<section>
+    <h2>Contact Me</h2>
+    <form id="my-form" action="https://formspree.io/f/xvojpeyp" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    
+        <button type="submit">Send Message</button>
+    
+        <p id="form-status"></p>
+    </form>
+  </section>
 
 
 </body>
